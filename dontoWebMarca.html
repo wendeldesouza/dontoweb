@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang"pt-br">
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>DontoWeb</title>
+	<style>
+		h1 {
+			font-family: Arial;
+			font-size: 30pt;
+			color: red;
+			text-shadow: 2px 2px 2px black;
+		}
+	</style>
+</head>
+<body>
+<body Bgcolor = "#456789"/>
+
+	<form action ="dontoWeb.php" method = "post" >
+		<h1> Cadastro </font> </h1>
+		
+		<fieldset><legend><h2>Dados do paciente</h2></legend>
+			<p> Nome:  <input type= "text" name= "nome" size = 65 ></br>
+			 Ano de nascimento: <input type= "number" name= "dataNasc" size = 10 value = 1990></br></p>
+		</fieldset></br></br>
+		  
+		<fieldset><legend><h2>Tipo de atendimento</h2></legend>
+			<input type="radio" name="tda" value="particular" /> Particular </t>
+			<input type="radio" name="tda" value="convenio" checked/> Convênio  </br></br> 
+		
+			Plano: <select name= "plano">
+				<option value = "1"> DenteBom </option>
+				<option value = "2"> Sorriso Legal </option>
+				<option value = "3"> Dentalflix </option> 
+				</select></br>
+			Número do Cartão: 
+			<input type= "number" name= "numCatao" size = 20 ></br>
+		</fieldset></br></br>
+
+
+		<fieldset><legend><h2>Tipos de procedimentos</h2></legend>
+			<input type="checkbox" name="tdp[]" value="Obituração" /> Obituração </br>
+			<input type="checkbox" name="tdp[]" value="Extração" /> Extração </br> 
+			<input type="checkbox" name="tdp[]" value="Ortodontia" /> Ortodontia </br> 
+		</fieldset></br></br>
+		<p> <input type="submit"/></p>
+	</form>
+
+</body>
+</html>
